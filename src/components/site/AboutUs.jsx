@@ -2,6 +2,7 @@ import { ShieldCheck, HeartHandshake, SlidersHorizontal, Award, TrendingUp } fro
 import Reveal from "./Reveal";
 import { aboutImage } from "@/lib/companyInfo";
 import { Image } from "@/components/ui/image";
+import SmoothFahrtLogo from "@/components/site/SmoothFahrtLogo";
 
 const values = [
   { icon: ShieldCheck, label: "Zuverlässigkeit" },
@@ -17,13 +18,25 @@ export default function AboutUs() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <Reveal>
-            <div className="overflow-hidden rounded-3xl shadow-2xl">
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl">
               <Image
                 src={aboutImage}
-                alt="Moderner Logistikstandort mit organisierter Flotte bei Dämmerung"
+                alt="SmoothFahrt Transporter am Logistikstandort bei Dämmerung"
                 fittingType="fill"
                 className="aspect-[4/3] w-full object-cover"
               />
+              {/* Branded logo decal on the transporter side panel */}
+              <div className="absolute left-[16%] top-[52%] flex items-center gap-2.5 rounded-xl bg-white/95 px-4 py-3 shadow-xl shadow-black/30 backdrop-blur-sm">
+                <SmoothFahrtLogo className="h-9 w-9" />
+                <span className="flex flex-col leading-none">
+                  <span className="font-heading text-lg font-bold tracking-tight text-[#0c1622]">
+                    Smooth<span className="text-electric">Fahrt</span>
+                  </span>
+                  <span className="text-[10px] font-medium uppercase tracking-wider text-[#0c1622]/50">
+                    Mobilität & Logistik
+                  </span>
+                </span>
+              </div>
             </div>
           </Reveal>
 
