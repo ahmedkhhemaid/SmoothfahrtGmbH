@@ -1,4 +1,4 @@
-import { ArrowRight, Bike, Clock, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, Bike, Clock, ShieldCheck, UtensilsCrossed } from "lucide-react";
 import Reveal from "./Reveal";
 import { Image } from "@/components/ui/image";
 
@@ -31,7 +31,7 @@ export default function FoodDeliverySection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-carbon/70 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-electric/15 px-3 py-1.5 text-xs font-semibold text-electric backdrop-blur">
-                <Sparkles className="h-3.5 w-3.5" />
+                <UtensilsCrossed className="h-3.5 w-3.5" />
                 Bald Uber Eats Partner
               </div>
             </div>
