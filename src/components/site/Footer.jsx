@@ -49,25 +49,25 @@ export default function Footer() {
           <FooterCol title="Leistungen" links={serviceLinks} go={go} />
           <FooterCol title="Unternehmen" links={companyLinks} go={go} />
           <FooterCol title="Rechtliches" links={legalLinks} go={go} />
+        </div>
 
-          <div className="text-center lg:text-left">
-            <h3 className="font-heading text-sm font-semibold uppercase tracking-widest text-white/40">Kontakt</h3>
-            <ul className="mt-5 space-y-3 text-sm">
-              <li>
-                <a href={`tel:${company.phoneHref}`} className="inline-flex items-center gap-3 text-white/60 hover:text-electric transition-colors justify-center lg:justify-start">
-                  <Phone className="h-4 w-4" /> {company.phone}
-                </a>
-              </li>
-              <li>
-                <a href={`mailto:${company.email}`} className="inline-flex items-center gap-3 text-white/60 hover:text-electric transition-colors break-all justify-center lg:justify-start">
-                  <Mail className="h-4 w-4 shrink-0" /> {company.email}
-                </a>
-              </li>
-              <li className="inline-flex items-start gap-3 text-white/60 justify-center lg:justify-start text-center lg:text-left">
-                <MapPin className="h-4 w-4 shrink-0 mt-0.5" /> {company.address}
-              </li>
-            </ul>
-          </div>
+        <div className="mt-10 text-center lg:text-left">
+          <h3 className="font-heading text-sm font-semibold uppercase tracking-widest text-white/40">Kontakt</h3>
+          <ul className="mt-5 flex flex-col sm:flex-row sm:flex-wrap gap-x-10 gap-y-4 text-sm items-center sm:items-start justify-center lg:justify-start">
+            <li>
+              <a href={`tel:${company.phoneHref}`} className="inline-flex items-center gap-3 text-white/60 hover:text-electric transition-colors justify-center lg:justify-start">
+                <Phone className="h-4 w-4" /> {company.phone}
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${company.email}`} className="inline-flex items-center gap-3 text-white/60 hover:text-electric transition-colors break-all justify-center lg:justify-start">
+                <Mail className="h-4 w-4 shrink-0" /> {company.email}
+              </a>
+            </li>
+            <li className="inline-flex items-start gap-3 text-white/60 justify-center lg:justify-start text-center lg:text-left">
+              <MapPin className="h-4 w-4 shrink-0 mt-0.5" /> {company.address}
+            </li>
+          </ul>
         </div>
 
         <div className="mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-center lg:justify-between gap-4 text-sm text-white/40 text-center lg:text-left">
