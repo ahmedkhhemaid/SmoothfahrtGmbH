@@ -40,8 +40,6 @@ const services = [
   },
 ];
 
-const pad = (n) => String(n + 1).padStart(2, "0");
-
 export default function ServicesOverview() {
   const scrollTo = (href) => {
     const el = document.querySelector(href);
@@ -70,10 +68,6 @@ export default function ServicesOverview() {
               >
                 {/* glowing top accent */}
                 <span className="absolute inset-x-0 top-0 h-px scale-x-0 bg-gradient-to-r from-transparent via-electric to-transparent transition-transform duration-500 group-hover:scale-x-100" />
-                {/* index watermark */}
-                <span className="pointer-events-none absolute right-5 top-4 font-heading text-5xl font-bold leading-none text-white/[0.05] transition-colors duration-300 group-hover:text-electric/15">
-                  {pad(i)}
-                </span>
                 {s.badge && (
                   <span className="absolute left-7 top-6 rounded-full border border-electric/40 bg-electric/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-electric">
                     {s.badge}
