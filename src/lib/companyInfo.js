@@ -31,7 +31,7 @@ export const heroImage =
 export const fleetImage =
   "https://media.base44.com/images/public/6a849815724cee83fdb039d2/43777c9bc_generated_64e2d45b.png";
 export const deliveryImage =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/e9ff91d9f_generated_72dc8d5b.png";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/af8a1ff40_generated_image.png";
 export const cleaningImage =
   "https://media.base44.com/images/public/6a849815724cee83fdb039d2/73a891234_Reinigungsservice.jpeg";
 export const eatsImage =
