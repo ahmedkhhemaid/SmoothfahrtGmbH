@@ -26,11 +26,8 @@ export default function AboutUs() {
                 className="aspect-[4/3] w-full object-cover"
               />
               {/* SmoothFahrt logo decal on the rear side panel, aligned with the window */}
-              <div className="absolute left-[80%] top-[55%] -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 px-3 py-2 rounded-lg">
-                <SmoothFahrtLogo className="h-10 w-10" />
-                <span className="font-heading text-lg font-bold tracking-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
-                  Smooth<span className="text-electric">Fahrt</span>
-                </span>
+              <div className="absolute left-[80%] top-[55%] -translate-x-1/2 -translate-y-1/2 flex items-center px-2 py-2 rounded-lg">
+                <SmoothFahrtLogo className="h-12 w-12" />
               </div>
             </div>
           </Reveal>
