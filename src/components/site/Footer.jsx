@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
-import { company } from "@/lib/companyInfo";
+import { company, logoIcon } from "@/lib/companyInfo";
+import { Image } from "@/components/ui/image";
 
 const serviceLinks = [
   { label: "Uber Flottenpartner", href: "#uber-flotte" },
@@ -35,7 +36,7 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-none bg-gradient-to-br from-[#005691] to-[#06A8BC] text-white font-heading font-bold text-sm tracking-tight">SF</span>
+              <Image src={logoIcon} alt="SmoothFahrt" fittingType="fit" className="h-10 w-10 rounded-md" />
               <span className="font-heading text-lg font-semibold tracking-tight">
                 Smooth<span className="text-electric">Fahrt</span>
               </span>

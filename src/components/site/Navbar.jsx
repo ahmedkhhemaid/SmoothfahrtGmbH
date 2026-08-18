@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Menu, X, ChevronDown, Car, Package, UtensilsCrossed, Sparkles, Clock } from "lucide-react";
-import { company } from "@/lib/companyInfo";
+import { company, logoIcon } from "@/lib/companyInfo";
+import { Image } from "@/components/ui/image";
 
 const primaryLinks = [
   { label: "Startseite", href: "#startseite" },
@@ -61,9 +62,7 @@ export default function Navbar() {
             onClick={() => handleNav("#startseite")}
             className="flex items-center gap-2.5 group shrink-0"
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-none bg-gradient-to-br from-[#005691] to-[#06A8BC] text-white font-heading font-bold text-sm tracking-tight">
-              SF
-            </span>
+            <Image src={logoIcon} alt="SmoothFahrt" fittingType="fit" className="h-9 w-9 rounded-md" />
             <span className="flex flex-col leading-none text-left">
               <span className="font-heading text-base font-bold tracking-tight text-white">
                 Smooth<span className="text-electric">Fahrt</span>
@@ -130,7 +129,7 @@ export default function Navbar() {
             </button>
             <button
               onClick={() => handleNav("#kontakt")}
-              className="rounded-none bg-gradient-to-r from-[#005691] to-[#00A69C] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-electric/25 hover:opacity-90 transition-opacity"
+              className="rounded-md bg-gradient-to-r from-[#005691] to-[#00A69C] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-electric/25 hover:opacity-90 transition-opacity"
             >
               Kontakt aufnehmen
             </button>
@@ -190,13 +189,13 @@ export default function Navbar() {
             </a>
             <button
               onClick={() => handleNav("#kontakt")}
-              className="w-full rounded-none bg-white/10 px-5 py-3 text-base font-semibold text-white"
+              className="w-full rounded-md bg-white/10 px-5 py-3 text-base font-semibold text-white"
             >
               Fahrer werden
             </button>
             <button
               onClick={() => handleNav("#kontakt")}
-              className="w-full rounded-none bg-gradient-to-r from-[#005691] to-[#00A69C] px-5 py-3 text-base font-semibold text-white"
+              className="w-full rounded-md bg-gradient-to-r from-[#005691] to-[#00A69C] px-5 py-3 text-base font-semibold text-white"
             >
               Kontakt aufnehmen
             </button>

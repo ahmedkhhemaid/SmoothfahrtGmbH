@@ -137,7 +137,7 @@ export default function UberEatsSection() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="inline-flex items-center gap-2 rounded-none bg-electric px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric/30 hover:bg-electric/90 transition-all disabled:opacity-60"
+                    className="inline-flex items-center gap-2 rounded-md bg-electric px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric/30 hover:bg-electric/90 transition-all disabled:opacity-60"
                   >
                     {submitting ? "Wird gesendet…" : "Interesse senden"}
                     {!submitting && <Send className="h-4 w-4" />}

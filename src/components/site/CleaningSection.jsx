@@ -45,7 +45,7 @@ export default function CleaningSection() {
 
             <button
               onClick={() => scrollTo("#kontakt")}
-              className="mt-8 inline-flex items-center gap-2 rounded-none bg-electric px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric/20 hover:bg-electric/90 transition-all"
+              className="mt-8 inline-flex items-center gap-2 rounded-md bg-electric px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric/20 hover:bg-electric/90 transition-all"
             >
               Kostenloses Angebot anfragen
               <ArrowRight className="h-5 w-4" />
