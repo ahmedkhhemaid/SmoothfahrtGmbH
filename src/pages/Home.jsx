@@ -3,6 +3,7 @@ import Hero from "@/components/site/Hero";
 import ServicesOverview from "@/components/site/ServicesOverview";
 import UberFleetSection from "@/components/site/UberFleetSection";
 import DeliverySection from "@/components/site/DeliverySection";
+import FoodDeliverySection from "@/components/site/FoodDeliverySection";
 import CleaningSection from "@/components/site/CleaningSection";
 import BaustellenSection from "@/components/site/BaustellenSection";
 import WhyChooseUs from "@/components/site/WhyChooseUs";
@@ -21,6 +22,7 @@ export default function Home() {
         <ServicesOverview />
         <UberFleetSection />
         <DeliverySection />
+        <FoodDeliverySection />
         <CleaningSection />
         <BaustellenSection />
         <WhyChooseUs />
