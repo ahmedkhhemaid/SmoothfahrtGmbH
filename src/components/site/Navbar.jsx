@@ -62,13 +62,10 @@ export default function Navbar() {
             onClick={() => handleNav("#startseite")}
             className="flex items-center gap-2.5 group shrink-0"
           >
-            <SmoothFahrtLogo className="h-9 w-9" />
+            <SmoothFahrtLogo className="h-11 w-11" />
             <span className="flex flex-col leading-none text-left">
               <span className="font-heading text-base font-bold tracking-tight text-white">
                 Smooth<span className="text-electric">Fahrt</span>
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-white/40">
-                GmbH
               </span>
             </span>
           </button>
