@@ -39,7 +39,7 @@ export default function Hero() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <h1 className="mt-6 font-heading text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white text-balance">
+            <h1 className="mt-6 font-heading text-3xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white text-balance">
               Mobilität. Lieferung. Reinigung.
               <span className="block text-electric">Alles aus einer Hand.</span>
             </h1>
