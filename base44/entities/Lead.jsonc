@@ -1,0 +1,50 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "service_requested": {
+      "type": "string",
+      "enum": [
+        "Uber / Fahrservice",
+        "Als Uber Fahrer arbeiten",
+        "Paketlieferung",
+        "Food Delivery",
+        "Reinigung",
+        "Uber Eats",
+        "Gesch\u00e4ftspartnerschaft",
+        "Sonstiges"
+      ]
+    },
+    "message": {
+      "type": "string"
+    },
+    "lead_status": {
+      "type": "string",
+      "enum": [
+        "Neu",
+        "Kontaktiert",
+        "In Bearbeitung",
+        "Abgeschlossen"
+      ],
+      "default": "Neu"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "service_requested"
+  ]
+}
