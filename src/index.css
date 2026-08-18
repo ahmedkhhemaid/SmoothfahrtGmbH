@@ -10,8 +10,8 @@
     --card-foreground: 240 6% 4%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 6% 4%;
-    --primary: 220 100% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 156 100% 50%;
+    --primary-foreground: 240 6% 4%;
     --secondary: 240 9% 96%;
     --secondary-foreground: 240 6% 4%;
     --muted: 240 9% 96%;
@@ -22,9 +22,9 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 5% 89%;
     --input: 240 5% 89%;
-    --ring: 220 100% 50%;
+    --ring: 156 100% 50%;
     --carbon: 240 6% 4%;
-    --electric: 220 100% 50%;
+    --electric: 156 100% 50%;
     --concrete: 240 9% 96%;
     --steel: 240 5% 89%;
     --radius: 0.75rem;
