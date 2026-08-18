@@ -10,7 +10,6 @@ import WhyChooseUs from "@/components/site/WhyChooseUs";
 import BusinessClients from "@/components/site/BusinessClients";
 import AboutUs from "@/components/site/AboutUs";
 import ContactSection from "@/components/site/ContactSection";
-import FinalCTA from "@/components/site/FinalCTA";
 import Footer from "@/components/site/Footer";
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
         <BusinessClients />
         <AboutUs />
         <ContactSection />
-        <FinalCTA />
       </main>
       <Footer />
     </div>
