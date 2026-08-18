@@ -44,7 +44,7 @@ export default function AGB() {
         sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
       </p>
 
-      <p className="text-sm text-carbon/40 mt-10">
+      <p className="text-sm text-white/40 mt-10">
         Hinweis: Dies ist eine AGB-Vorlage. Bitte lassen Sie diese vor Verwendung rechtlich prüfen
         und an Ihre tatsächlichen Geschäftsbedingungen anpassen.
       </p>

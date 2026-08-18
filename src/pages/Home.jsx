@@ -14,7 +14,7 @@ import Footer from "@/components/site/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-carbon">
       <Navbar />
       <main>
         <Hero />

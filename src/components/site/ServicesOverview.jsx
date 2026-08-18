@@ -49,14 +49,14 @@ export default function ServicesOverview() {
   };
 
   return (
-    <section id="leistungen" className="py-24 lg:py-32 bg-white">
+    <section id="leistungen" className="py-24 lg:py-32 bg-carbon">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl">
           <span className="text-sm font-semibold uppercase tracking-widest text-electric">Unsere Leistungen</span>
-          <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-carbon text-balance">
+          <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white text-balance">
             Ein Partner. Mehrere Lösungen.
           </h2>
-          <p className="mt-5 text-lg text-carbon/60">
+          <p className="mt-5 text-lg text-white/60">
             Vier aktive Dienstleistungsbereiche und ein wachsender Service – gebündelt unter einem Dach.
           </p>
         </Reveal>
@@ -67,8 +67,8 @@ export default function ServicesOverview() {
               <div
                 className={`group relative flex h-full flex-col rounded-2xl border p-7 transition-all duration-500 hover:-translate-y-1.5 ${
                   s.dark
-                    ? "bg-carbon border-electric/40 shadow-[0_0_30px_-8px] shadow-electric/40"
-                    : "bg-concrete border-steel hover:border-electric/30 hover:shadow-xl"
+                    ? "bg-white/5 border-electric/40 shadow-[0_0_30px_-8px] shadow-electric/40"
+                    : "bg-white/5 border-white/10 hover:border-electric/30 hover:shadow-xl"
                 }`}
               >
                 {s.badge && (
@@ -78,21 +78,21 @@ export default function ServicesOverview() {
                 )}
                 <span
                   className={`flex h-14 w-14 items-center justify-center rounded-xl transition-colors ${
-                    s.dark ? "bg-white/10 text-electric" : "bg-white text-electric group-hover:bg-electric group-hover:text-white"
+                    s.dark ? "bg-white/10 text-electric" : "bg-white/10 text-electric group-hover:bg-electric group-hover:text-white"
                   }`}
                 >
                   <s.icon className="h-7 w-7" />
                 </span>
-                <h3 className={`mt-6 font-heading text-xl font-semibold ${s.dark ? "text-white" : "text-carbon"}`}>
+                <h3 className={`mt-6 font-heading text-xl font-semibold ${s.dark ? "text-white" : "text-white"}`}>
                   {s.title}
                 </h3>
-                <p className={`mt-3 flex-1 text-base leading-relaxed ${s.dark ? "text-white/60" : "text-carbon/60"}`}>
+                <p className={`mt-3 flex-1 text-base leading-relaxed ${s.dark ? "text-white/60" : "text-white/60"}`}>
                   {s.desc}
                 </p>
                 <button
                   onClick={() => scrollTo(s.href)}
                   className={`mt-6 inline-flex items-center gap-2 text-sm font-semibold transition-colors ${
-                    s.dark ? "text-electric hover:text-white" : "text-electric hover:text-carbon"
+                    s.dark ? "text-electric hover:text-white" : "text-electric hover:text-white"
                   }`}
                 >
                   {s.cta}

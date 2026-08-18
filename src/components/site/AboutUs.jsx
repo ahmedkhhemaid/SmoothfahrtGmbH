@@ -13,7 +13,7 @@ const values = [
 
 export default function AboutUs() {
   return (
-    <section id="ueber-uns" className="py-24 lg:py-32 bg-concrete">
+    <section id="ueber-uns" className="py-24 lg:py-32 bg-carbon">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <Reveal>
@@ -30,15 +30,15 @@ export default function AboutUs() {
           <div>
             <Reveal>
               <span className="text-sm font-semibold uppercase tracking-widest text-electric">Über uns</span>
-              <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-carbon text-balance">
+              <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white text-balance">
                 Mehr als nur ein Dienstleister
               </h2>
-              <p className="mt-5 text-lg text-carbon/60">
+              <p className="mt-5 text-lg text-white/60">
                 Wir verbinden Mobilität, Logistik, Lieferung und Reinigung unter einem Dach. Als unabhängiger
                 Dienstleister bieten wir Unternehmen und Privatkunden zuverlässige Lösungen aus einer Hand –
                 flexibel, professionell und mit klarem Fokus auf Qualität.
               </p>
-              <p className="mt-4 text-base text-carbon/60">
+              <p className="mt-4 text-base text-white/60">
                 Unser wachsendes Serviceportfolio wird kontinuierlich erweitert, um den Anforderungen unserer
                 Kunden und Partner gerecht zu werden.
               </p>
@@ -46,12 +46,12 @@ export default function AboutUs() {
 
             <Reveal delay={0.1}>
               <div className="mt-8">
-                <p className="text-sm font-semibold uppercase tracking-widest text-carbon/40">Unsere Werte</p>
+                <p className="text-sm font-semibold uppercase tracking-widest text-white/40">Unsere Werte</p>
                 <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {values.map((v) => (
-                    <div key={v.label} className="flex items-center gap-3 rounded-xl bg-white border border-steel px-4 py-3">
+                    <div key={v.label} className="flex items-center gap-3 rounded-xl bg-white/5 border border-white/10 px-4 py-3">
                       <v.icon className="h-5 w-5 text-electric" />
-                      <span className="text-sm font-medium text-carbon/80">{v.label}</span>
+                      <span className="text-sm font-medium text-white/80">{v.label}</span>
                     </div>
                   ))}
                 </div>

@@ -85,7 +85,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-white to-transparent" />
+      <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-carbon to-transparent" />
     </section>
   );
 }

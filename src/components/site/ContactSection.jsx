@@ -53,14 +53,14 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="kontakt" className="py-24 lg:py-32 bg-white">
+    <section id="kontakt" className="py-24 lg:py-32 bg-carbon">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl">
           <span className="text-sm font-semibold uppercase tracking-widest text-electric">Kontakt</span>
-          <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-carbon text-balance">
+          <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white text-balance">
             Wie können wir Ihnen helfen?
           </h2>
-          <p className="mt-5 text-lg text-carbon/60">
+          <p className="mt-5 text-lg text-white/60">
             Wir melden uns schnellstmöglich bei Ihnen.
           </p>
         </Reveal>
@@ -68,34 +68,34 @@ export default function ContactSection() {
         <div className="mt-14 grid lg:grid-cols-5 gap-8">
           <Reveal className="lg:col-span-2">
             <div className="flex flex-col gap-4 h-full">
-              <a href={`tel:${company.phoneHref}`} className="group flex items-center gap-4 rounded-2xl border border-steel bg-concrete p-5 hover:border-electric/40 transition-colors">
+              <a href={`tel:${company.phoneHref}`} className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-electric/40 transition-colors">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric text-white">
                   <Phone className="h-6 w-6" />
                 </span>
                 <div>
-                  <p className="text-sm text-carbon/50">Telefon</p>
-                  <p className="font-heading font-semibold text-carbon group-hover:text-electric transition-colors">{company.phone}</p>
+                  <p className="text-sm text-white/50">Telefon</p>
+                  <p className="font-heading font-semibold text-white group-hover:text-electric transition-colors">{company.phone}</p>
                 </div>
               </a>
-              <a href={`mailto:${company.email}`} className="group flex items-center gap-4 rounded-2xl border border-steel bg-concrete p-5 hover:border-electric/40 transition-colors">
+              <a href={`mailto:${company.email}`} className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-electric/40 transition-colors">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric text-white">
                   <Mail className="h-6 w-6" />
                 </span>
                 <div>
-                  <p className="text-sm text-carbon/50">E-Mail</p>
-                  <p className="font-heading font-semibold text-carbon group-hover:text-electric transition-colors break-all">{company.email}</p>
+                  <p className="text-sm text-white/50">E-Mail</p>
+                  <p className="font-heading font-semibold text-white group-hover:text-electric transition-colors break-all">{company.email}</p>
                 </div>
               </a>
-              <a href={company.whatsappLink} target="_blank" rel="noreferrer" className="group flex items-center gap-4 rounded-2xl border border-steel bg-concrete p-5 hover:border-electric/40 transition-colors">
+              <a href={company.whatsappLink} target="_blank" rel="noreferrer" className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-electric/40 transition-colors">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric text-white">
                   <MessageCircle className="h-6 w-6" />
                 </span>
                 <div>
-                  <p className="text-sm text-carbon/50">WhatsApp</p>
-                  <p className="font-heading font-semibold text-carbon group-hover:text-electric transition-colors">Direkt schreiben</p>
+                  <p className="text-sm text-white/50">WhatsApp</p>
+                  <p className="font-heading font-semibold text-white group-hover:text-electric transition-colors">Direkt schreiben</p>
                 </div>
               </a>
-              <div className="rounded-2xl bg-carbon p-6 mt-auto">
+              <div className="rounded-2xl bg-white/5 border border-white/10 p-6 mt-auto">
                 <p className="text-sm text-white/50">Geschäftsadresse</p>
                 <p className="mt-1 font-heading font-semibold text-white">{company.address}</p>
               </div>
@@ -103,12 +103,12 @@ export default function ContactSection() {
           </Reveal>
 
           <Reveal className="lg:col-span-3" delay={0.1}>
-            <div className="rounded-3xl border border-steel bg-concrete p-8">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
               {done ? (
                 <div className="flex flex-col items-center justify-center py-16 text-center">
                   <CheckCircle2 className="h-16 w-16 text-electric" />
-                  <h3 className="mt-4 font-heading text-2xl font-semibold text-carbon">Vielen Dank für Ihre Anfrage!</h3>
-                  <p className="mt-2 text-carbon/60">Wir melden uns schnellstmöglich bei Ihnen.</p>
+                  <h3 className="mt-4 font-heading text-2xl font-semibold text-white">Vielen Dank für Ihre Anfrage!</h3>
+                  <p className="mt-2 text-white/60">Wir melden uns schnellstmöglich bei Ihnen.</p>
                 </div>
               ) : (
                 <form onSubmit={submit} className="grid sm:grid-cols-2 gap-5">
@@ -155,15 +155,17 @@ export default function ContactSection() {
         .c-input {
           width: 100%;
           border-radius: 0.75rem;
-          border: 1px solid hsl(240 5% 89%);
-          background: white;
+          border: 1px solid hsl(0 0% 100% / 0.15);
+          background: hsl(0 0% 100% / 0.05);
           padding: 0.75rem 1rem;
-          color: hsl(240 6% 4%);
+          color: white;
           font-size: 1rem;
           outline: none;
           transition: border-color 0.2s, box-shadow 0.2s;
         }
+        .c-input::placeholder { color: hsl(0 0% 100% / 0.4); }
         .c-input:focus { border-color: hsl(220 100% 50%); box-shadow: 0 0 0 3px hsl(220 100% 50% / 0.15); }
+        .c-input option { color: hsl(240 6% 4%); }
       `}</style>
     </section>
   );
@@ -172,7 +174,7 @@ export default function ContactSection() {
 function Field({ label, children, full }) {
   return (
     <label className={`block ${full ? "sm:col-span-2" : ""}`}>
-      <span className="mb-1.5 block text-sm font-medium text-carbon/70">{label}</span>
+      <span className="mb-1.5 block text-sm font-medium text-white/70">{label}</span>
       {children}
     </label>
   );

@@ -44,7 +44,7 @@ export default function Datenschutz() {
         Datenübertragbarkeit und Widerspruch. Beschwerderecht bei der zuständigen Aufsichtsbehörde.
       </p>
 
-      <p className="text-sm text-carbon/40 mt-10">
+      <p className="text-sm text-white/40 mt-10">
         Hinweis: Dies ist eine Datenschutz-Vorlage. Bitte lassen Sie diese vor Veröffentlichung
         rechtlich prüfen und an Ihre tatsächlichen Datenverarbeitungsprozesse anpassen.
       </p>

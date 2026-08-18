@@ -4,24 +4,24 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 6% 4%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 6% 4%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 6% 4%;
+    --background: 240 6% 4%;
+    --foreground: 0 0% 100%;
+    --card: 240 6% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 240 6% 7%;
+    --popover-foreground: 0 0% 100%;
     --primary: 220 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 240 9% 96%;
-    --secondary-foreground: 240 6% 4%;
-    --muted: 240 9% 96%;
-    --muted-foreground: 240 4% 40%;
-    --accent: 240 9% 96%;
-    --accent-foreground: 240 6% 4%;
+    --secondary: 240 6% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 6% 12%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 240 6% 14%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5% 89%;
-    --input: 240 5% 89%;
+    --border: 240 6% 16%;
+    --input: 240 6% 16%;
     --ring: 220 100% 50%;
     --carbon: 240 6% 4%;
     --electric: 220 100% 50%;
@@ -86,7 +86,7 @@
   }
 
   .prose-legal {
-    color: hsl(240 6% 4% / 0.7);
+    color: hsl(0 0% 100% / 0.7);
     font-size: 1rem;
     line-height: 1.7;
   }
@@ -94,7 +94,7 @@
     font-family: var(--font-heading);
     font-size: 1.25rem;
     font-weight: 600;
-    color: hsl(240 6% 4%);
+    color: hsl(0 0% 100%);
     margin-top: 2rem;
     margin-bottom: 0.75rem;
   }

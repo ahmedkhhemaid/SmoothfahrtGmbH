@@ -30,14 +30,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-carbon text-white">
+    <footer className="bg-carbon text-white border-t border-white/10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid gap-10 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-carbon font-heading font-bold text-lg">U</span>
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-carbon font-heading font-bold text-lg">S</span>
               <span className="font-heading text-lg font-semibold tracking-tight">
-                Urban<span className="text-electric">Services</span>
+                Smooth<span className="text-electric">Fahrt</span>
               </span>
             </div>
             <p className="mt-4 text-sm text-white/50 max-w-xs">

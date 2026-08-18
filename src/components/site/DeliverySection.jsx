@@ -40,11 +40,11 @@ export default function DeliverySection() {
   };
 
   return (
-    <section id="lieferung" className="py-24 lg:py-32 bg-white">
+    <section id="lieferung" className="py-24 lg:py-32 bg-carbon">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-3xl">
           <span className="text-sm font-semibold uppercase tracking-widest text-electric">Logistik & Lieferung</span>
-          <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-carbon text-balance">
+          <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white text-balance">
             Schnell. Sicher. Zuverlässig geliefert.
           </h2>
         </Reveal>
@@ -52,14 +52,14 @@ export default function DeliverySection() {
         <div className="mt-14 grid lg:grid-cols-2 gap-6">
           {cards.map((c, i) => (
             <Reveal key={c.title} delay={i * 0.1}>
-              <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-steel bg-concrete p-8 transition-all hover:shadow-xl">
-                <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-white text-electric shadow-sm">
+              <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition-all hover:shadow-xl">
+                <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-white/10 text-electric shadow-sm">
                   <c.icon className="h-7 w-7" />
                 </span>
-                <h3 className="mt-6 font-heading text-2xl font-semibold text-carbon">{c.title}</h3>
+                <h3 className="mt-6 font-heading text-2xl font-semibold text-white">{c.title}</h3>
                 <ul className="mt-6 grid sm:grid-cols-2 gap-3 flex-1">
                   {c.points.map((p) => (
-                    <li key={p} className="flex items-start gap-2.5 text-sm text-carbon/70">
+                    <li key={p} className="flex items-start gap-2.5 text-sm text-white/70">
                       <Check className="mt-0.5 h-4 w-4 shrink-0 text-electric" />
                       {p}
                     </li>
@@ -67,7 +67,7 @@ export default function DeliverySection() {
                 </ul>
                 <button
                   onClick={() => scrollTo(c.href)}
-                  className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-carbon px-6 py-3 text-sm font-semibold text-white hover:bg-electric transition-colors"
+                  className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-electric transition-colors"
                 >
                   {c.cta}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

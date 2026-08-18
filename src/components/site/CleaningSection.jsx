@@ -19,26 +19,26 @@ export default function CleaningSection() {
   };
 
   return (
-    <section id="reinigung" className="py-24 lg:py-32 bg-concrete">
+    <section id="reinigung" className="py-24 lg:py-32 bg-carbon">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <Reveal className="order-2 lg:order-1">
             <span className="text-sm font-semibold uppercase tracking-widest text-electric">Reinigungsservice</span>
-            <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-carbon text-balance">
+            <h2 className="mt-3 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white text-balance">
               Sauberkeit, auf die Sie sich verlassen können.
             </h2>
-            <p className="mt-5 text-lg text-carbon/60">
+            <p className="mt-5 text-lg text-white/60">
               Professionelle Reinigung für Wohnungen, Büros und Gewerbeimmobilien – regelmäßig, einmalig
               oder als individuelle Lösung.
             </p>
 
             <ul className="mt-8 grid sm:grid-cols-2 gap-3">
               {services.map((s) => (
-                <li key={s} className="flex items-center gap-3 rounded-xl bg-white px-4 py-3 border border-steel">
+                <li key={s} className="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3 border border-white/10">
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-electric/10 text-electric">
                     <Check className="h-4 w-4" />
                   </span>
-                  <span className="text-sm font-medium text-carbon/80">{s}</span>
+                  <span className="text-sm font-medium text-white/80">{s}</span>
                 </li>
               ))}
             </ul>

@@ -9,10 +9,10 @@ export default function FinalCTA() {
   };
 
   return (
-    <section className="py-20 lg:py-28 bg-concrete">
+    <section className="py-20 lg:py-28 bg-carbon">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <div className="relative overflow-hidden rounded-3xl bg-carbon px-8 py-16 lg:px-16 lg:py-20 text-center">
+          <div className="relative overflow-hidden rounded-3xl bg-white/5 border border-white/10 px-8 py-16 lg:px-16 lg:py-20 text-center">
             <div className="absolute inset-0 bg-grid opacity-[0.05]" />
             <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-electric/30 blur-3xl" />
             <div className="relative">
