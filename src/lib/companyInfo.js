@@ -39,4 +39,4 @@ export const eatsImage =
 export const aboutImage =
   "https://media.base44.com/images/public/6a849815724cee83fdb039d2/b171a3d1c_generated_9104a25a.png";
 export const logoIcon =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/62a09ac86_image.png";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/388d26bf0_Untitled-18August2026at205858.png";
