@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { company } from "@/lib/companyInfo";
 import SmoothFahrtLogo from "@/components/site/SmoothFahrtLogo";
 
@@ -44,13 +44,6 @@ export default function Footer() {
             <p className="mt-4 text-sm text-white/50 max-w-xs mx-auto lg:mx-0">
               Mobilität, Lieferung und Reinigung aus einer Hand – zuverlässig, flexibel und effizient.
             </p>
-            <div className="mt-6 flex gap-3 justify-center lg:justify-start">
-              {[Linkedin, Instagram, Facebook].map((Icon, i) => (
-                <a key={i} href="#" aria-label="Social Media" className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-white/60 hover:text-electric hover:border-electric/40 transition-colors">
-                  <Icon className="h-5 w-5" />
-                </a>
-              ))}
-            </div>
           </div>
 
           <FooterCol title="Leistungen" links={serviceLinks} go={go} />
