@@ -7,6 +7,8 @@ export const company = {
   whatsapp: "4917632866622",
   whatsappLink: "https://wa.me/4917632866622",
   address: "Landgrafenstraße 45, 41069 Mönchengladbach",
+  mapsDirectionsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=Landgrafenstra%C3%9Fe+45,+41069+M%C3%B6nchengladbach",
   city: "Mönchengladbach",
   country: "Deutschland",
   ustId: "DE461887436",

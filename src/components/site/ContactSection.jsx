@@ -92,15 +92,20 @@ export default function ContactSection() {
                   <p className="text-sm font-semibold text-white group-hover:text-electric transition-colors">Direkt schreiben</p>
                 </div>
               </a>
-              <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-3">
+              <a
+                href={company.mapsDirectionsLink}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-3 hover:border-electric/40 transition-colors"
+              >
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-electric text-white">
                   <MapPin className="h-4 w-4" />
                 </span>
-                <div>
-                  <p className="text-xs text-white/45">Geschäftsadresse</p>
-                  <p className="text-sm font-semibold text-white">{company.address}</p>
+                <div className="min-w-0">
+                  <p className="text-xs text-white/45">Geschäftsadresse · Route anzeigen</p>
+                  <p className="text-sm font-semibold text-white group-hover:text-electric transition-colors">{company.address}</p>
                 </div>
-              </div>
+              </a>
             </div>
           </Reveal>
 
