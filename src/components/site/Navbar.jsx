@@ -51,8 +51,8 @@ export default function Navbar() {
       <nav
         className={`pointer-events-auto w-full max-w-6xl rounded-2xl border transition-all duration-500 ${
           scrolled
-            ? "h-14 border-white/10 bg-[#161618]/80 shadow-lg shadow-black/20"
-            : "h-16 border-white/10 bg-[#161618]/70"
+            ? "h-14 border-white/10 bg-[#191b1f]/80 shadow-lg shadow-black/20"
+            : "h-16 border-white/10 bg-[#191b1f]/70"
         } glass-dark backdrop-blur-xl`}
       >
         <div className="flex h-full items-center justify-between gap-4 px-4 sm:px-6">
@@ -61,7 +61,7 @@ export default function Navbar() {
             onClick={() => handleNav("#startseite")}
             className="flex items-center gap-2.5 group shrink-0"
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white text-[#161618] font-heading font-bold text-lg">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white text-[#191b1f] font-heading font-bold text-lg">
               S
             </span>
             <span className="flex flex-col leading-none text-left">
@@ -89,7 +89,7 @@ export default function Navbar() {
                     />
                   </button>
                   {servicesOpen && (
-                    <div className="absolute left-1/2 top-full mt-2 -translate-x-1/2 w-64 rounded-xl border border-white/10 bg-[#1c1c1f]/95 backdrop-blur-xl p-2 shadow-xl shadow-black/30 animate-fade-in">
+                    <div className="absolute left-1/2 top-full mt-2 -translate-x-1/2 w-64 rounded-xl border border-white/10 bg-[#23262b]/95 backdrop-blur-xl p-2 shadow-xl shadow-black/30 animate-fade-in">
                       {serviceLinks.map((s) => (
                         <button
                           key={s.label}
@@ -130,7 +130,7 @@ export default function Navbar() {
             </button>
             <button
               onClick={() => handleNav("#kontakt")}
-              className="rounded-full bg-gradient-to-r from-electric to-violet-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-electric/25 hover:opacity-90 transition-opacity"
+              className="rounded-none bg-gradient-to-r from-electric to-violet-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-electric/25 hover:opacity-90 transition-opacity"
             >
               Kontakt aufnehmen
             </button>
@@ -149,7 +149,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="pointer-events-auto lg:hidden absolute top-full inset-x-4 mt-2 rounded-2xl border border-white/10 bg-[#161618]/95 backdrop-blur-xl p-3 shadow-xl shadow-black/30 animate-fade-in">
+        <div className="pointer-events-auto lg:hidden absolute top-full inset-x-4 mt-2 rounded-2xl border border-white/10 bg-[#191b1f]/95 backdrop-blur-xl p-3 shadow-xl shadow-black/30 animate-fade-in">
           <div className="space-y-1">
             {primaryLinks.map((item) =>
               item.dropdown ? (
@@ -190,13 +190,13 @@ export default function Navbar() {
             </a>
             <button
               onClick={() => handleNav("#kontakt")}
-              className="w-full rounded-full bg-white/10 px-5 py-3 text-base font-semibold text-white"
+              className="w-full rounded-none bg-white/10 px-5 py-3 text-base font-semibold text-white"
             >
               Fahrer werden
             </button>
             <button
               onClick={() => handleNav("#kontakt")}
-              className="w-full rounded-full bg-gradient-to-r from-electric to-violet-500 px-5 py-3 text-base font-semibold text-white"
+              className="w-full rounded-none bg-gradient-to-r from-electric to-violet-500 px-5 py-3 text-base font-semibold text-white"
             >
               Kontakt aufnehmen
             </button>

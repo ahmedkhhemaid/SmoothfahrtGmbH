@@ -4,29 +4,29 @@
 
 @layer base {
   :root {
-    --background: 240 6% 4%;
+    --background: 222 12% 11%;
     --foreground: 0 0% 100%;
-    --card: 240 6% 7%;
+    --card: 222 10% 15%;
     --card-foreground: 0 0% 100%;
-    --popover: 240 6% 7%;
+    --popover: 222 10% 15%;
     --popover-foreground: 0 0% 100%;
     --primary: 220 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 240 6% 12%;
+    --secondary: 222 8% 18%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 240 6% 12%;
-    --muted-foreground: 0 0% 70%;
-    --accent: 240 6% 14%;
+    --muted: 222 8% 18%;
+    --muted-foreground: 220 8% 66%;
+    --accent: 222 8% 20%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 6% 16%;
-    --input: 240 6% 16%;
+    --border: 220 8% 24%;
+    --input: 220 8% 24%;
     --ring: 220 100% 50%;
-    --carbon: 240 6% 4%;
+    --carbon: 222 12% 11%;
     --electric: 220 100% 50%;
-    --concrete: 240 9% 96%;
-    --steel: 240 5% 89%;
+    --concrete: 222 10% 15%;
+    --steel: 220 8% 26%;
     --radius: 0.75rem;
     --font-heading: "Sora", ui-sans-serif, system-ui, sans-serif;
     --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -80,7 +80,7 @@
   }
 
   .glass-dark {
-    background: hsl(240 6% 4% / 0.6);
+    background: hsl(222 12% 11% / 0.65);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
   }

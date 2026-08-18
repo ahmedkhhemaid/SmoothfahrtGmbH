@@ -67,7 +67,7 @@ export default function DeliverySection() {
                 </ul>
                 <button
                   onClick={() => scrollTo(c.href)}
-                  className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-electric transition-colors"
+                  className="mt-8 inline-flex items-center justify-center gap-2 rounded-none bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-electric transition-colors"
                 >
                   {c.cta}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

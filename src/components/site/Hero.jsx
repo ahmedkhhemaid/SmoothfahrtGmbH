@@ -56,14 +56,14 @@ export default function Hero() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => scrollTo("#leistungen")}
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-electric px-7 py-4 text-base font-semibold text-white shadow-xl shadow-electric/30 hover:bg-electric/90 transition-all"
+                className="group inline-flex items-center justify-center gap-2 rounded-none bg-electric px-7 py-4 text-base font-semibold text-white shadow-xl shadow-electric/30 hover:bg-electric/90 transition-all"
               >
                 Unsere Leistungen
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </button>
               <button
                 onClick={() => scrollTo("#kontakt")}
-                className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-4 text-base font-semibold text-white backdrop-blur hover:bg-white/10 transition-all"
+                className="inline-flex items-center justify-center rounded-none border border-white/20 bg-white/5 px-7 py-4 text-base font-semibold text-white backdrop-blur hover:bg-white/10 transition-all"
               >
                 Kontakt aufnehmen
               </button>

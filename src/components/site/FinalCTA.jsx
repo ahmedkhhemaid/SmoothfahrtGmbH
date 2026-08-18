@@ -25,14 +25,14 @@ export default function FinalCTA() {
               <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
                 <button
                   onClick={() => scrollTo("#kontakt")}
-                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-electric px-7 py-4 text-base font-semibold text-white shadow-xl shadow-electric/30 hover:bg-electric/90 transition-all"
+                  className="group inline-flex items-center justify-center gap-2 rounded-none bg-electric px-7 py-4 text-base font-semibold text-white shadow-xl shadow-electric/30 hover:bg-electric/90 transition-all"
                 >
                   Jetzt Kontakt aufnehmen
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </button>
                 <a
                   href={`tel:${company.phoneHref}`}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-semibold text-white hover:bg-white/10 transition-all"
+                  className="inline-flex items-center justify-center gap-2 rounded-none border border-white/20 px-7 py-4 text-base font-semibold text-white hover:bg-white/10 transition-all"
                 >
                   <Phone className="h-5 w-5" />
                   Anrufen

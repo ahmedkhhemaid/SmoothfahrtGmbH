@@ -53,13 +53,13 @@ export default function BusinessClients() {
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => scrollTo("#kontakt")}
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-electric px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric/30 hover:bg-electric/90 transition-all"
+                  className="inline-flex items-center justify-center gap-2 rounded-none bg-electric px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric/30 hover:bg-electric/90 transition-all"
                 >
                   Geschäftskunde werden
                 </button>
                 <button
                   onClick={() => scrollTo("#kontakt")}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-base font-semibold text-white hover:bg-white/10 transition-all"
+                  className="inline-flex items-center justify-center gap-2 rounded-none border border-white/20 px-7 py-4 text-base font-semibold text-white hover:bg-white/10 transition-all"
                 >
                   Individuelles Angebot anfragen
                   <ArrowRight className="h-4 w-4" />
