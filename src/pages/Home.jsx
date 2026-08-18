@@ -4,6 +4,7 @@ import ServicesOverview from "@/components/site/ServicesOverview";
 import UberFleetSection from "@/components/site/UberFleetSection";
 import DeliverySection from "@/components/site/DeliverySection";
 import CleaningSection from "@/components/site/CleaningSection";
+import BaustellenSection from "@/components/site/BaustellenSection";
 import UberEatsSection from "@/components/site/UberEatsSection";
 import WhyChooseUs from "@/components/site/WhyChooseUs";
 import BusinessClients from "@/components/site/BusinessClients";
@@ -22,6 +23,7 @@ export default function Home() {
         <UberFleetSection />
         <DeliverySection />
         <CleaningSection />
+        <BaustellenSection />
         <UberEatsSection />
         <WhyChooseUs />
         <BusinessClients />

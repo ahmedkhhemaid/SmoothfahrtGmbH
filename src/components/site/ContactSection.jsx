@@ -11,6 +11,7 @@ const serviceOptions = [
   "Paketlieferung",
   "Food Delivery",
   "Reinigung",
+  "Baustellenservice",
   "Uber Eats",
   "Geschäftspartnerschaft",
   "Sonstiges",

@@ -7,6 +7,7 @@ const serviceLinks = [
   { label: "Paketlieferung", href: "#lieferung" },
   { label: "Food Delivery", href: "#lieferung" },
   { label: "Reinigung", href: "#reinigung" },
+  { label: "Baustellenservice", href: "#baustellenservice" },
   { label: "Uber Eats", href: "#uber-eats" },
 ];
 

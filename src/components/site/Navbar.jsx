@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { Menu, X, ChevronDown, Car, Package, UtensilsCrossed, Sparkles, Clock } from "lucide-react";
+import { Menu, X, ChevronDown, Car, Package, UtensilsCrossed, Sparkles, Clock, HardHat } from "lucide-react";
 import { company } from "@/lib/companyInfo";
 import SmoothFahrtLogo from "@/components/site/SmoothFahrtLogo";
 
@@ -15,6 +15,7 @@ const serviceLinks = [
   { label: "Kurier & Paketlieferung", href: "#lieferung", icon: Package },
   { label: "Food Delivery", href: "#lieferung", icon: UtensilsCrossed },
   { label: "Reinigungsservice", href: "#reinigung", icon: Sparkles },
+  { label: "Baustellenservice", href: "#baustellenservice", icon: HardHat },
   { label: "Uber Eats – Demnächst", href: "#uber-eats", icon: Clock, soon: true },
 ];
 

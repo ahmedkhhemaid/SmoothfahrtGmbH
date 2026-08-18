@@ -1,0 +1,58 @@
+{
+  "name": "Baustellenanfrage",
+  "type": "object",
+  "properties": {
+    "firma": {
+      "type": "string"
+    },
+    "ansprechpartner": {
+      "type": "string"
+    },
+    "telefon": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "einsatzort": {
+      "type": "string"
+    },
+    "gewuenschte_leistung": {
+      "type": "string",
+      "enum": [
+        "Baustellenhelfer",
+        "Materialtransport",
+        "Be- und Entladehilfe",
+        "Baustellenreinigung",
+        "Entr\u00fcmpelung / Aufr\u00e4umarbeiten",
+        "Sonstige Unterst\u00fctzung"
+      ]
+    },
+    "gewuenschter_zeitraum": {
+      "type": "string"
+    },
+    "anzahl_mitarbeiter": {
+      "type": "string"
+    },
+    "nachricht": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Neu",
+        "Kontaktiert",
+        "In Bearbeitung",
+        "Abgeschlossen"
+      ],
+      "default": "Neu"
+    }
+  },
+  "required": [
+    "ansprechpartner",
+    "email",
+    "telefon",
+    "gewuenschte_leistung"
+  ]
+}
