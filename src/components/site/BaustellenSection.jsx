@@ -82,7 +82,7 @@ export default function BaustellenSection() {
   };
 
   return (
-    <section id="baustellenservice" className="py-20 lg:py-28 bg-carbon">
+    <section id="baustellenservice" className="py-14 lg:py-28 bg-carbon">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <Reveal className="max-w-3xl">
@@ -186,7 +186,7 @@ export default function BaustellenSection() {
                   <Field label="Ansprechpartner *">
                     <input required value={form.ansprechpartner} onChange={update("ansprechpartner")} className="b-input" />
                   </Field>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Field label="Telefon *">
                       <input required value={form.telefon} onChange={update("telefon")} className="b-input" />
                     </Field>
@@ -204,7 +204,7 @@ export default function BaustellenSection() {
                       ))}
                     </select>
                   </Field>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Field label="Zeitraum">
                       <input value={form.zeitraum} onChange={update("zeitraum")} className="b-input" placeholder="z. B. KW 35" />
                     </Field>

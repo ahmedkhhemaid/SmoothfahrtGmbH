@@ -17,7 +17,7 @@ export default function BusinessClients() {
   };
 
   return (
-    <section className="relative py-24 lg:py-32 bg-carbon overflow-hidden">
+    <section className="relative py-16 lg:py-32 bg-carbon overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-[0.04]" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -69,7 +69,7 @@ export default function BusinessClients() {
           </div>
 
           <Reveal delay={0.15}>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { k: "Mobilität", v: "Mitarbeiter- & Fahrgasttransporte" },
                 { k: "Logistik", v: "Pakete, Kurier & Food Delivery" },

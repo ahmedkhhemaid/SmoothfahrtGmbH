@@ -49,7 +49,7 @@ export default function DeliverySection() {
               src={deliveryImage}
               alt="Professionelle Paketübergabe durch Kurier"
               fittingType="fill"
-              className="aspect-[3/1] w-full object-cover"
+              className="aspect-[16/10] sm:aspect-[3/1] w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-carbon via-carbon/40 to-transparent" />
             <div className="absolute bottom-5 left-5 max-w-xs">

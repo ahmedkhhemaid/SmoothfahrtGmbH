@@ -12,7 +12,7 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 lg:py-32 bg-carbon">
+    <section className="py-16 lg:py-32 bg-carbon">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl">
           <span className="text-sm font-semibold uppercase tracking-widest text-electric">Warum wir</span>
