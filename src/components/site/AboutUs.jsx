@@ -2,7 +2,6 @@ import { ShieldCheck, HeartHandshake, SlidersHorizontal, Award, TrendingUp } fro
 import Reveal from "./Reveal";
 import { aboutImage } from "@/lib/companyInfo";
 import { Image } from "@/components/ui/image";
-import SmoothFahrtLogo from "@/components/site/SmoothFahrtLogo";
 
 const values = [
   { icon: ShieldCheck, label: "Zuverlässigkeit" },
@@ -25,10 +24,7 @@ export default function AboutUs() {
                 fittingType="fill"
                 className="aspect-[4/3] w-full object-cover"
               />
-              {/* SmoothFahrt logo decal on the rear side panel, aligned with the window */}
-              <div className="absolute left-[80%] top-[55%] -translate-x-1/2 -translate-y-1/2 flex items-center px-2 py-2 rounded-lg">
-                <SmoothFahrtLogo className="h-12 w-12" />
-              </div>
+
             </div>
           </Reveal>
 
