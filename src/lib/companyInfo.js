@@ -27,16 +27,16 @@ export const navItems = [
 ];
 
 export const heroImage =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/8e4cbb833_generated_0696a920.png";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/f3033c628_generated_image.png";
 export const fleetImage =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/43777c9bc_generated_64e2d45b.png";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/9d0cdab90_generated_image.png";
 export const deliveryImage =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/af8a1ff40_generated_image.png";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/bfb916942_generated_image.png";
 export const cleaningImage =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/73a891234_Reinigungsservice.jpeg";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/19204f8fa_generated_image.png";
 export const eatsImage =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/69485b566_generated_e5676617.png";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/fd59684d1_generated_image.png";
 export const aboutImage =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/b171a3d1c_generated_9104a25a.png";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/baaba23c8_generated_image.png";
 export const logoIcon =
   "https://media.base44.com/images/public/6a849815724cee83fdb039d2/388d26bf0_Untitled-18August2026at205858.png";
