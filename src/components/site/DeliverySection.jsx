@@ -3,36 +3,6 @@ import Reveal from "./Reveal";
 import { deliveryImage } from "@/lib/companyInfo";
 import { Image } from "@/components/ui/image";
 
-const cards = [
-  {
-    icon: Package,
-    title: "Paket & Kurier",
-    points: [
-      "Same-day Lieferung",
-      "Terminierte Lieferung",
-      "Geschäftskunden-Lieferung",
-      "Private Lieferung",
-      "Zuverlässige Kuriere",
-      "Flexible Lieferlösungen",
-    ],
-    cta: "Lieferung anfragen",
-    href: "#kontakt",
-  },
-  {
-    icon: UtensilsCrossed,
-    title: "Food Delivery",
-    points: [
-      "Restaurant-Lieferung",
-      "Last-Mile Delivery",
-      "Professionelle Kuriere",
-      "Flexible Lieferkapazität",
-      "Geschäftspartnerschaften",
-    ],
-    cta: "Partnerschaft anfragen",
-    href: "#kontakt",
-  },
-];
-
 const stats = [
   { icon: Zap, label: "Same-day Lieferung" },
   { icon: ShieldCheck, label: "Zuverlässige Kuriere" },
@@ -94,41 +64,6 @@ export default function DeliverySection() {
           </div>
         </Reveal>
 
-        <div className="mt-5 grid lg:grid-cols-2 gap-5">
-          {cards.map((c, i) => (
-            <Reveal key={c.title} delay={i * 0.1}>
-              <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/[0.06] bg-gradient-to-b from-white/[0.06] to-white/[0.01] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-electric/30">
-                <span className="absolute inset-x-0 top-0 h-px scale-x-0 bg-gradient-to-r from-transparent via-electric to-transparent transition-transform duration-500 group-hover:scale-x-100" />
-                <div className="flex items-center gap-4">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-electric transition-all duration-300 group-hover:scale-110 group-hover:bg-electric group-hover:text-white">
-                    <c.icon className="h-6 w-6" />
-                  </span>
-                  <h3 className="font-heading text-2xl font-semibold text-white">{c.title}</h3>
-                </div>
-
-                <div className="mt-5 flex flex-wrap gap-2 flex-1">
-                  {c.points.map((p) => (
-                    <span
-                      key={p}
-                      className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs font-medium text-white/70 transition-colors group-hover:border-electric/30 group-hover:text-white/90"
-                    >
-                      <span className="h-1.5 w-1.5 rounded-full bg-electric/70" />
-                      {p}
-                    </span>
-                  ))}
-                </div>
-
-                <button
-                  onClick={() => scrollTo(c.href)}
-                  className="mt-6 inline-flex items-center justify-center gap-2 self-start rounded-md bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-electric"
-                >
-                  {c.cta}
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </button>
-              </div>
-            </Reveal>
-          ))}
-        </div>
       </div>
     </section>
   );
