@@ -4,29 +4,32 @@
 
 @layer base {
   :root {
-    --background: 222 12% 11%;
+    --background: 205 50% 8%;
     --foreground: 0 0% 100%;
-    --card: 222 10% 15%;
+    --card: 205 42% 12%;
     --card-foreground: 0 0% 100%;
-    --popover: 222 10% 15%;
+    --popover: 205 42% 12%;
     --popover-foreground: 0 0% 100%;
-    --primary: 220 100% 50%;
+    --primary: 176 100% 33%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 222 8% 18%;
+    --secondary: 205 35% 16%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 222 8% 18%;
-    --muted-foreground: 220 8% 66%;
-    --accent: 222 8% 20%;
+    --muted: 205 35% 16%;
+    --muted-foreground: 200 20% 66%;
+    --accent: 205 35% 18%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 8% 24%;
-    --input: 220 8% 24%;
-    --ring: 220 100% 50%;
-    --carbon: 222 12% 11%;
-    --electric: 220 100% 50%;
-    --concrete: 222 10% 15%;
-    --steel: 220 8% 26%;
+    --border: 200 25% 26%;
+    --input: 200 25% 26%;
+    --ring: 176 100% 33%;
+    --carbon: 205 50% 8%;
+    --electric: 176 100% 33%;
+    --teal-navy: 204 100% 28%;
+    --teal: 176 100% 33%;
+    --teal-light: 187 94% 38%;
+    --concrete: 205 42% 12%;
+    --steel: 200 25% 30%;
     --radius: 0.75rem;
     --font-heading: "Sora", ui-sans-serif, system-ui, sans-serif;
     --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -80,7 +83,7 @@
   }
 
   .glass-dark {
-    background: hsl(222 12% 11% / 0.65);
+    background: hsl(205 50% 8% / 0.7);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
   }
