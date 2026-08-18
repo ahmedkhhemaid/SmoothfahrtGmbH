@@ -1,5 +1,7 @@
-import { ArrowRight, Car, Package, UtensilsCrossed, Sparkles, Clock } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Car, Package, UtensilsCrossed, Sparkles, Clock } from "lucide-react";
 import Reveal from "./Reveal";
+import { fleetImage } from "@/lib/companyInfo";
+import { Image } from "@/components/ui/image";
 
 const services = [
   {
@@ -8,7 +10,7 @@ const services = [
     desc: "Professionelle Personenbeförderung und Flottenbetrieb in Zusammenarbeit mit der Uber-Plattform.",
     cta: "Mehr erfahren",
     href: "#uber-flotte",
-    image: true,
+    feature: true,
   },
   {
     icon: Package,
@@ -34,11 +36,10 @@ const services = [
   {
     icon: Clock,
     title: "Uber Eats",
-    badge: "COMING SOON",
+    badge: "BALD",
     desc: "Wir erweitern unsere Delivery-Flotte für neue Möglichkeiten im Food Delivery.",
     cta: "Interesse anmelden",
     href: "#uber-eats",
-    dark: true,
   },
 ];
 
@@ -47,6 +48,9 @@ export default function ServicesOverview() {
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
+
+  const feature = services.find((s) => s.feature);
+  const rest = services.filter((s) => !s.feature);
 
   return (
     <section id="leistungen" className="py-24 lg:py-32 bg-carbon">
@@ -61,44 +65,58 @@ export default function ServicesOverview() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((s, i) => (
-            <Reveal key={s.title} delay={i * 0.08}>
-              <div
-                className={`group relative flex h-full flex-col rounded-2xl border p-7 transition-all duration-500 hover:-translate-y-1.5 ${
-                  s.dark
-                    ? "bg-white/5 border-electric/40 shadow-[0_0_30px_-8px] shadow-electric/40"
-                    : "bg-white/5 border-white/10 hover:border-electric/30 hover:shadow-xl"
-                }`}
+        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[200px]">
+          {/* Feature card */}
+          <Reveal className="md:col-span-2 lg:col-span-2 lg:row-span-2">
+            <button
+              onClick={() => scrollTo(feature.href)}
+              className="group relative flex h-full w-full flex-col justify-end overflow-hidden rounded-2xl border border-white/10 text-left"
+            >
+              <Image
+                src={fleetImage}
+                alt="Uber Flottenpartner Fahrzeug"
+                fittingType="fill"
+                className="absolute inset-0 h-full w-full"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-carbon via-carbon/70 to-carbon/10" />
+              <div className="relative p-8">
+                <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-electric text-white shadow-lg shadow-electric/30">
+                  <feature.icon className="h-7 w-7" />
+                </span>
+                <h3 className="mt-6 font-heading text-2xl sm:text-3xl font-bold tracking-tight text-white">
+                  {feature.title}
+                </h3>
+                <p className="mt-3 max-w-md text-base leading-relaxed text-white/70">{feature.desc}</p>
+                <span className="mt-6 inline-flex items-center gap-2 rounded-md bg-white/10 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur transition-colors group-hover:bg-electric">
+                  {feature.cta}
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </div>
+            </button>
+          </Reveal>
+
+          {/* Compact cards */}
+          {rest.map((s, i) => (
+            <Reveal key={s.title} delay={0.08 * (i + 1)}>
+              <button
+                onClick={() => scrollTo(s.href)}
+                className="group relative flex h-full w-full flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-left transition-all duration-300 hover:-translate-y-1 hover:border-electric/40 hover:bg-white/[0.06]"
               >
                 {s.badge && (
-                  <span className="absolute top-6 right-6 rounded-full bg-electric px-3 py-1 text-xs font-bold tracking-wider text-white animate-pulse-glow">
+                  <span className="absolute right-5 top-5 rounded-full border border-electric/40 bg-electric/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-electric">
                     {s.badge}
                   </span>
                 )}
-                <span
-                  className={`flex h-14 w-14 items-center justify-center rounded-xl transition-colors ${
-                    s.dark ? "bg-white/10 text-electric" : "bg-white/10 text-electric group-hover:bg-electric group-hover:text-white"
-                  }`}
-                >
-                  <s.icon className="h-7 w-7" />
+                <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/10 text-electric transition-colors group-hover:bg-electric group-hover:text-white">
+                  <s.icon className="h-5 w-5" />
                 </span>
-                <h3 className={`mt-6 font-heading text-xl font-semibold ${s.dark ? "text-white" : "text-white"}`}>
-                  {s.title}
-                </h3>
-                <p className={`mt-3 flex-1 text-base leading-relaxed ${s.dark ? "text-white/60" : "text-white/60"}`}>
-                  {s.desc}
-                </p>
-                <button
-                  onClick={() => scrollTo(s.href)}
-                  className={`mt-6 inline-flex items-center gap-2 text-sm font-semibold transition-colors ${
-                    s.dark ? "text-electric hover:text-white" : "text-electric hover:text-white"
-                  }`}
-                >
+                <h3 className="mt-5 font-heading text-lg font-semibold text-white">{s.title}</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-white/55">{s.desc}</p>
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-electric">
                   {s.cta}
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </button>
-              </div>
+                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </span>
+              </button>
             </Reveal>
           ))}
         </div>
