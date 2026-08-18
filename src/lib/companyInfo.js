@@ -33,7 +33,7 @@ export const fleetImage =
 export const deliveryImage =
   "https://media.base44.com/images/public/6a849815724cee83fdb039d2/e9ff91d9f_generated_72dc8d5b.png";
 export const cleaningImage =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/650bde31f_image.png";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/73a891234_Reinigungsservice.jpeg";
 export const eatsImage =
   "https://media.base44.com/images/public/6a849815724cee83fdb039d2/69485b566_generated_e5676617.png";
 export const aboutImage =
