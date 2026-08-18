@@ -1,13 +1,17 @@
 export const company = {
-  name: "Urban Services Group",
+  name: "Smooth Fahrt GmbH",
   tagline: "Mobilität. Lieferung. Reinigung. Alles aus einer Hand.",
-  phone: "+49 30 123 456 78",
-  phoneHref: "+493012345678",
-  email: "kontakt@urbanservices.de",
-  whatsapp: "4917012345678",
-  whatsappLink: "https://wa.me/4917012345678",
-  address: "Musterstraße 1, 10115 Berlin",
-  city: "Berlin",
+  phone: "+49 176 32866622",
+  phoneHref: "+4917632866622",
+  email: "info@smoothfahr.de",
+  whatsapp: "4917632866622",
+  whatsappLink: "https://wa.me/4917632866622",
+  address: "Landgrafenstraße 45, 41069 Mönchengladbach",
+  city: "Mönchengladbach",
+  country: "Deutschland",
+  ustId: "DE461887436",
+  handelsregister: "HRB 23801",
+  steuernummer: "121/5765/6280",
 };
 
 export const navItems = [

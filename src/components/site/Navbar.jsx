@@ -62,14 +62,14 @@ export default function Navbar() {
             className="flex items-center gap-2.5 group shrink-0"
           >
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white text-[#161618] font-heading font-bold text-lg">
-              U
+              S
             </span>
             <span className="flex flex-col leading-none text-left">
               <span className="font-heading text-base font-bold tracking-tight text-white">
-                Urban<span className="text-electric">Services</span>
+                Smooth<span className="text-electric">Fahrt</span>
               </span>
               <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-white/40">
-                Group
+                GmbH
               </span>
             </span>
           </button>

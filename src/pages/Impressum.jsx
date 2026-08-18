@@ -10,13 +10,20 @@ export default function Impressum() {
       <p>
         {company.name}<br />
         {company.address}<br />
-        Deutschland
+        {company.country}
       </p>
 
       <h2>Kontakt</h2>
       <p>
         Telefon: <a href={`tel:${company.phoneHref}`} className="text-electric">{company.phone}</a><br />
         E-Mail: <a href={`mailto:${company.email}`} className="text-electric">{company.email}</a>
+      </p>
+
+      <h2>Registereintrag</h2>
+      <p>
+        Handelsregister: {company.handelsregister}<br />
+        Umsatzsteuer-Identifikationsnummer: {company.ustId}<br />
+        Steuernummer: {company.steuernummer}
       </p>
 
       <h2>Verantwortlich für den Inhalt</h2>
@@ -31,11 +38,6 @@ export default function Impressum() {
 
       <p>
         Diese Inhalte werden nach Bekanntwerden einer konkreten Rechtsverletzung umgehend entfernt.
-      </p>
-
-      <p className="text-sm text-carbon/40 mt-10">
-        Hinweis: Dies ist eine Impressum-Vorlage. Bitte ersetzen Sie die Platzhalter durch Ihre
-        tatsächlichen Unternehmensdaten.
       </p>
     </LegalLayout>
   );
