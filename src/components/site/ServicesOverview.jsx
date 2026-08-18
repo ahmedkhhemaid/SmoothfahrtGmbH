@@ -1,4 +1,4 @@
-import { ArrowRight, Car, Package, UtensilsCrossed, Sparkles, HardHat } from "lucide-react";
+import { ArrowRight, Car, Package, UtensilsCrossed, Brush, HardHat } from "lucide-react";
 import Reveal from "./Reveal";
 
 const services = [
@@ -24,7 +24,7 @@ const services = [
     href: "#lieferung",
   },
   {
-    icon: Sparkles,
+    icon: Brush,
     title: "Reinigungsservice",
     desc: "Reinigung für Wohnungen, Büros und Gewerbeimmobilien.",
     cta: "Angebot anfragen",
