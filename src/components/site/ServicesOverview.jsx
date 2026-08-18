@@ -1,4 +1,4 @@
-import { ArrowRight, Car, Package, UtensilsCrossed, Sparkles, Clock, HardHat } from "lucide-react";
+import { ArrowRight, Car, Package, UtensilsCrossed, Sparkles, HardHat } from "lucide-react";
 import Reveal from "./Reveal";
 
 const services = [
@@ -37,14 +37,6 @@ const services = [
     cta: "Anfrage senden",
     href: "#baustellenservice",
   },
-  {
-    icon: Clock,
-    title: "Uber Eats",
-    badge: "BALD",
-    desc: "Erweiterung der Delivery-Flotte für neue Möglichkeiten.",
-    cta: "Interesse anmelden",
-    href: "#uber-eats",
-  },
 ];
 
 export default function ServicesOverview() {
@@ -62,11 +54,11 @@ export default function ServicesOverview() {
             Ein Partner. Mehrere Lösungen.
           </h2>
           <p className="mt-5 text-lg text-white/60">
-            Fünf aktive Dienstleistungsbereiche und ein wachsender Service – gebündelt unter einem Dach.
+            Fünf aktive Dienstleistungsbereiche – gebündelt unter einem Dach.
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 0.06}>
               <button
