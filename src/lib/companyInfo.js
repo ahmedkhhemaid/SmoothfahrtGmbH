@@ -37,6 +37,6 @@ export const cleaningImage =
 export const eatsImage =
   "https://media.base44.com/images/public/6a849815724cee83fdb039d2/fd59684d1_generated_image.png";
 export const aboutImage =
-  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/cda591867_generated_image.png";
+  "https://media.base44.com/images/public/6a849815724cee83fdb039d2/a6ae9eb4e_generated_image.png";
 export const logoIcon =
   "https://media.base44.com/images/public/6a849815724cee83fdb039d2/388d26bf0_Untitled-18August2026at205858.png";

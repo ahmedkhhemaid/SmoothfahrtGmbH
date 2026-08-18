@@ -25,16 +25,11 @@ export default function AboutUs() {
                 fittingType="fill"
                 className="aspect-[4/3] w-full object-cover"
               />
-              {/* Branded logo decal on the transporter side panel */}
-              <div className="absolute left-[16%] top-[52%] flex items-center gap-2.5 rounded-xl bg-white/95 px-4 py-3 shadow-xl shadow-black/30 backdrop-blur-sm">
-                <SmoothFahrtLogo className="h-9 w-9" />
-                <span className="flex flex-col leading-none">
-                  <span className="font-heading text-lg font-bold tracking-tight text-[#0c1622]">
-                    Smooth<span className="text-electric">Fahrt</span>
-                  </span>
-                  <span className="text-[10px] font-medium uppercase tracking-wider text-[#0c1622]/50">
-                    Mobilität & Logistik
-                  </span>
+              {/* SmoothFahrt logo decal on the transporter side panel */}
+              <div className="absolute left-[14%] top-[54%] flex items-center gap-2 px-3 py-2 rounded-lg">
+                <SmoothFahrtLogo className="h-10 w-10" />
+                <span className="font-heading text-lg font-bold tracking-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
+                  Smooth<span className="text-electric">Fahrt</span>
                 </span>
               </div>
             </div>
