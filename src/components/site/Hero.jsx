@@ -46,7 +46,7 @@ export default function Hero() {
           </Reveal>
 
           <Reveal delay={0.2}>
-            <p className="mt-6 max-w-2xl text-lg lg:text-xl leading-relaxed text-white/70">
+            <p className="mt-6 hidden max-w-2xl text-lg lg:text-xl leading-relaxed text-white/70 sm:block">
               Professionelle Dienstleistungen für Mobilität, Logistik, Food Delivery und Reinigung –
               zuverlässig, flexibel und effizient.
             </p>
