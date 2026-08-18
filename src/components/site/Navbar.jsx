@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Menu, X, ChevronDown, Car, Package, UtensilsCrossed, Sparkles, Clock } from "lucide-react";
-import { company, logoIcon } from "@/lib/companyInfo";
-import { Image } from "@/components/ui/image";
+import { company } from "@/lib/companyInfo";
+import SmoothFahrtLogo from "@/components/site/SmoothFahrtLogo";
 
 const primaryLinks = [
   { label: "Startseite", href: "#startseite" },
@@ -62,7 +62,7 @@ export default function Navbar() {
             onClick={() => handleNav("#startseite")}
             className="flex items-center gap-2.5 group shrink-0"
           >
-            <Image src={logoIcon} alt="SmoothFahrt" fittingType="fit" className="h-9 w-9 rounded-md" />
+            <SmoothFahrtLogo className="h-9 w-9" />
             <span className="flex flex-col leading-none text-left">
               <span className="font-heading text-base font-bold tracking-tight text-white">
                 Smooth<span className="text-electric">Fahrt</span>
