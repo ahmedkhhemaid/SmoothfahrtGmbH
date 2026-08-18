@@ -130,7 +130,7 @@ export default function Navbar() {
             </button>
             <button
               onClick={() => handleNav("#kontakt")}
-              className="rounded-full bg-electric px-5 py-2.5 text-sm font-semibold text-carbon shadow-lg shadow-electric/25 hover:opacity-90 transition-opacity"
+              className="rounded-full bg-gradient-to-r from-electric to-violet-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-electric/25 hover:opacity-90 transition-opacity"
             >
               Kontakt aufnehmen
             </button>
@@ -196,7 +196,7 @@ export default function Navbar() {
             </button>
             <button
               onClick={() => handleNav("#kontakt")}
-              className="w-full rounded-full bg-electric px-5 py-3 text-base font-semibold text-carbon"
+              className="w-full rounded-full bg-gradient-to-r from-electric to-violet-500 px-5 py-3 text-base font-semibold text-white"
             >
               Kontakt aufnehmen
             </button>

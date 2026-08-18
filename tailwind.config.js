@@ -87,8 +87,8 @@ module.exports = {
   				to: { transform: 'translateX(-50%)' }
   			},
   			'pulse-glow': {
-  			'0%, 100%': { boxShadow: '0 0 0 0 hsl(156 100% 50% / 0.4)' },
-  			'50%': { boxShadow: '0 0 0 12px hsl(156 100% 50% / 0)' }
+  			'0%, 100%': { boxShadow: '0 0 0 0 hsl(220 100% 50% / 0.4)' },
+  			'50%': { boxShadow: '0 0 0 12px hsl(220 100% 50% / 0)' }
   			}
   		},
   		animation: {
