@@ -56,9 +56,9 @@ export default function CleaningSection() {
             <div className="overflow-hidden rounded-3xl shadow-2xl">
               <Image
                 src={cleaningImage}
-                alt="Hochwertiges modernes Glasgebäude mit reflektierender Fassade"
+                alt="Reinigungsfachkräfte bei der Büro- und Wohnungsreinigung"
                 fittingType="fill"
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/5] w-full object-cover"
               />
             </div>
           </Reveal>
